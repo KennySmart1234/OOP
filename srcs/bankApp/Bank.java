@@ -44,14 +44,14 @@ public class Bank {
 
     }
 
-    public void  deposit(String accountNumber, int amount) {
+    public void deposit(String accountNumber, int amount) {
             Account account = findAccount(accountNumber);
             account.deposit(amount);
     }
 
     private Account getAccount(String accountNumber) {
         Account account = findAccount(accountNumber);
-        if (account != null) {
+        if (account == null) {
             throw new IllegalArgumentException("Account not found");
         }
         return account;

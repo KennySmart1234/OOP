@@ -1,5 +1,6 @@
 package bankApp;
-
+import bankApp.Account;
+import bankApp.Bank;
 
 import java.util.Scanner;
 
@@ -24,33 +25,30 @@ public class AtmMain {
             switch (option) {
 
                 case "1":
-                    createAccount();
+
 
 
                 case "2":
-                    deposit();
 
 
                 case "3":
-                    withdraw();
 
 
                 case "4":
-                    checkBalance();
 
 
                 case "5":
-                    transfer();
+
 
                 case "6":
-                    System.out.println("**********************************");
-                    System.out.println("THANK YOU FOR BANKING WITH US!");
-                    System.out.println("**********************************");
+                    System.out.println("==============================");
+                    System.out.println("THANK YOU");
+                    System.out.println("==============================");
                     condition = false;
                     break;
 
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println("Invalid Input.");
             }
         }
     }
@@ -67,15 +65,6 @@ public class AtmMain {
                 """);
     }
 
-    private static void createAccount() { }
-
-    private static void deposit() { }
-
-    private static void withdraw() { }
-
-    private static void checkBalance() { }
-
-    private static void transfer() { }
 }
 
 

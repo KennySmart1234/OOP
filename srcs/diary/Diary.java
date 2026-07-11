@@ -22,6 +22,13 @@ public class Diary {
         return username;
     }
 
+    private void setPassword(String password) {
+        this.password = password;
+    }
+    public String getPassword() {
+        return password;
+    }
+
     public void unlockDiary(String password) {
         if (this.password.equals(password)) {
             isLocked = false;

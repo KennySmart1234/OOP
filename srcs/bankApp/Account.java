@@ -1,7 +1,5 @@
 package bankApp;
 
-import com.sun.nio.sctp.AbstractNotificationHandler;
-
 public class Account {
 
     private String firstName;
